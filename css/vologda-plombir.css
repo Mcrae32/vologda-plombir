@@ -1,0 +1,294 @@
+@font-face {
+    font-family: "CyrillicOldBold";
+    src: url("../fonts/CyrillicOldBold.eot");
+    src: url("../fonts/CyrillicOldBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CyrillicOldBold.woff") format("woff"),
+    url("../fonts/CyrillicOldBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body.vologda-plombir-page {
+    background: url(../images/bg_2.jpg);
+    background-position-x: center;
+}
+
+.vologda-plombir-slid {
+    background: url(../images/video/slid_vp_1.jpg);
+    background-position: 50% 0%; text-align: center;
+}
+
+.medal {
+    background: url(../images/sprites_logo.png) no-repeat;
+    height: 115px;
+    width: 115px;
+    margin: 0 auto 5%;
+}
+
+.medal.m1 {
+    background-position: -11px -6px;
+}
+
+.medal.m2 {
+    background-position: -132px -6px;
+}
+
+.medal.m3 {
+    background-position: -258px -6px;
+}
+
+.medal.m4 {
+    background-position: -383px -6px;
+}
+
+.medal.m5 {
+    background-position: -502px -6px;
+}
+
+.medal-wrap p,
+.brand-reviews p {
+    color: white;
+    text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.67);
+}
+
+.brand-reviews p {
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: 0.7px;
+    margin-top: 3em;
+}
+
+.assortment {
+    background: url(../images/bg_5_top.jpg) center top no-repeat, url(../images/bg_5_center.jpg) center top repeat-y;
+    padding: 4.5em 0 1.5em;
+    background-size: contain;
+}
+
+.vologda-plombir-page .assortment .positions-wrap .container-fluid {
+    /*padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;*/
+}
+
+.title-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-block {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.assortment .read-more.news,
+.vologda-plombir-page #where_buy .read-more.news {
+    margin-right: 1.5em;
+    padding: 9px 13px 14px 20px;
+    border: 1px solid white;
+    z-index: 1;
+}
+
+.vologda-plombir-page #where_buy .read-more.news {
+    margin: 0 auto;
+    
+}
+
+.assortment .positions-wrap .positions-block {
+    background: url(../images/background.jpg);
+}
+
+.assortment .read-more.news:hover,
+.assortment .read-more.news:focus,
+.assortment .read-more.news.active,
+.vologda-plombir-page #where_buy .read-more.news:hover,
+.vologda-plombir-page #where_buy .read-more.news:focus,
+.vologda-plombir-page #where_buy .read-more.news.active {
+    border-color: #fe4f60;
+}
+
+.assortment .read-more.news a {
+    outline: none;
+}
+
+.assortment .modern-page-navigation a {
+    color: white;
+}
+
+.assortment .arrow-pager {
+    background: url(../images/sprites2.png);
+    background-position: -15px -753px;
+    height: 12px;
+    display: inline-block;
+}
+
+.assortment span {
+    color: #d4cccc;
+}
+
+.vologda-plombir-page h3 {
+    color: #CB141A;
+    font-size: 2.5em;
+    font-family: "CyrillicOldBold", serif;
+    text-shadow: 0 -1px 0 #FFFFFF, 0 -1px 0 #FFFFFF, 0 1px 0 #FFFFFF, 0 1px 0 #FFFFFF, -1px 0 0 #FFFFFF, 1px 0 0 #FFFFFF, -1px 0 0 #FFFFFF, 1px 0 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 85px;
+    position: relative;
+}
+
+.vologda-plombir-page h3::after {
+    content: "";
+    position: absolute;
+    background: url(../images/decor_title_reviews.png) no-repeat;
+    width: 121px;
+    height: 18px;
+    bottom: -0.3em;
+    left: calc(50% - 60.5px);
+    border: none;
+    top: 75px;
+}
+
+.new_items_and_news.container-fluid {
+    max-width: 100%;
+}
+
+.vologda-plombir-page .map {
+    background: url(../images/map.png) no-repeat center -30px;
+    height: 570px;
+    background-size: contain;
+}
+
+.vologda-plombir-page #where_buy h3 {
+    margin-top: 15px;
+}
+
+.vologda-plombir-page footer {
+    background-color: #ffefd6;
+}
+
+.cs-style-4 figure > div {
+  /*  align-items: stretch;
+    justify-content: center;
+  */
+}
+
+/**** Isotope Filtering ****/
+.isotope-item {
+    z-index: 2;
+  }
+  .isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+  }
+  /**** Isotope CSS3 transitions ****/
+  .isotope,
+  .isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+       -moz-transition-duration: 0.8s;
+        -ms-transition-duration: 0.8s;
+         -o-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+  }
+  .isotope {
+    -webkit-transition-property: height, width;
+       -moz-transition-property: height, width;
+        -ms-transition-property: height, width;
+         -o-transition-property: height, width;
+            transition-property: height, width;
+  }
+  .isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+       -moz-transition-property:    -moz-transform, opacity;
+        -ms-transition-property:     -ms-transform, opacity;
+         -o-transition-property:         top, left, opacity;
+            transition-property:         transform, opacity;
+  }
+  /**** disabling Isotope CSS3 transitions ****/
+  .isotope.no-transition,
+  .isotope.no-transition .isotope-item,
+  .isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+       -moz-transition-duration: 0s;
+        -ms-transition-duration: 0s;
+         -o-transition-duration: 0s;
+            transition-duration: 0s;
+  }
+  /* End: Recommended Isotope styles */
+  /* disable CSS transitions for containers with infinite scrolling*/
+  .isotope.infinite-scrolling {
+    -webkit-transition: none;
+       -moz-transition: none;
+        -ms-transition: none;
+         -o-transition: none;
+            transition: none;
+  }
+
+@media (max-width: 1199px) {
+
+  .brand-reviews p {
+    margin-top: 2em;
+  }
+
+  .vologda-plombir-page .assortment .positions-wrap .container-fluid {
+    /*padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;*/
+  }
+
+}
+
+@media (max-width: 991px) {
+    .brands-reviews div {
+        text-align: center;
+    }
+    .brand-reviews img {
+        display: inline-block;
+    }
+    .brand-reviews p {
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .cs-style-4 figure:hover img, .cs-style-4 figure.cs-hover img {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+
+    .new_items_and_news {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+    .filter-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-block .read-more.news {
+        margin-bottom: 10px;
+        width: 12em;
+    }
+
+    .vologda-plombir-page .map {
+        height: 334.8px;
+    }
+
+    .brand-reviews div {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .vologda-plombir-page .map {
+        height: 134.8px;
+        padding-top: 130px;
+    }
+}
