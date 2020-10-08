@@ -7,15 +7,42 @@
     font-style: normal;
     font-weight: normal;
 }
-
-body.vologda-plombir-page {
-    background: url(../images/bg_2.jpg);
-    background-position-x: center;
+ 
+@font-face {
+	font-family: 'Conv_ofont.ru_AXP ZhikharevC';
+	src: url('../fonts/ofont.ru_AXP ZhikharevC.eot');
+    src: local('â˜º'), 
+    url('../fonts/ofont.ru_AXP ZhikharevC.woff') format('woff'), 
+    url('../fonts/ofont.ru_AXP ZhikharevC.ttf') format('truetype'), 
+    url('../fonts/ofont.ru_AXP ZhikharevC.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
-.vologda-plombir-slid {
-    background: url(../images/video/slid_vp_1.jpg);
+body.zr-page {
+    background-color: #172736;
+}
+
+.zr-slid {
+    background: url(../images/video/slid_zr_1.jpg);
     background-position: 50% 0%; text-align: center;
+}
+
+.button_slider {
+    display: none;
+}
+
+.awards {
+    padding-top: 70px;
+    margin-top: -70px;
+    margin-bottom: 0;
+    color: #323232;
+}
+
+#where_buy {
+    background: url(../images/bg_where_buy.jpg) center bottom;
+    margin-bottom: 0;
+    padding-top: 40px;
 }
 
 .medal {
@@ -45,30 +72,46 @@ body.vologda-plombir-page {
     background-position: -502px -6px;
 }
 
-.medal-wrap p,
-.brand-reviews p {
-    color: white;
-    text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.67);
+.brand-reviews-wrap {
+    text-align: center;
+    background: url(../images/brand_reviews_bg.jpg) center bottom;
+    padding-bottom: 35px;
+}
+
+.brand-reviews {
+    margin-bottom: 0;
 }
 
 .brand-reviews p {
-    text-transform: uppercase;
+    font-family:'Conv_ofont.ru_AXP ZhikharevC',Serif;
+    background: rgb(224,147,61);
+    background: linear-gradient(90deg, rgba(224,147,61,1) 0%, rgba(224,147,61,1) 19%, rgba(255,218,131,1) 73%, rgba(224,147,61,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.brand-reviews p {
     line-height: 1.6em;
     letter-spacing: 0.7px;
-    margin-top: 3em;
+    margin-top: 0em;
+    margin-bottom: 3em;
+    font-weight: 1000;
 }
 
 .assortment {
-    background: url(../images/bg_5_top.jpg) center top no-repeat, url(../images/bg_5_center.jpg) center top repeat-y;
+    background: url(../images/assortment_bg.jpg) center top no-repeat;
     padding: 4.5em 0 1.5em;
-    background-size: contain;
+    background-size: cover;
 }
 
-.vologda-plombir-page .assortment .positions-wrap .container-fluid {
+.zr-page .assortment .positions-wrap .container-fluid {
     /*padding-left: 0;
     padding-right: 0;
     max-width: 100%;*/
 }
+
 
 .title-wrap {
     display: flex;
@@ -83,14 +126,14 @@ body.vologda-plombir-page {
 }
 
 .assortment .read-more.news,
-.vologda-plombir-page #where_buy .read-more.news {
+.zr-page #where_buy .read-more.news {
     margin-right: 1.5em;
     padding: 9px 13px 14px 20px;
     border: 1px solid white;
     z-index: 1;
 }
 
-.vologda-plombir-page #where_buy .read-more.news {
+.zr-page #where_buy .read-more.news {
     margin: 0 auto;
     
 }
@@ -102,9 +145,9 @@ body.vologda-plombir-page {
 .assortment .read-more.news:hover,
 .assortment .read-more.news:focus,
 .assortment .read-more.news.active,
-.vologda-plombir-page #where_buy .read-more.news:hover,
-.vologda-plombir-page #where_buy .read-more.news:focus,
-.vologda-plombir-page #where_buy .read-more.news.active {
+.zr-page #where_buy .read-more.news:hover,
+.zr-page #where_buy .read-more.news:focus,
+.zr-page #where_buy .read-more.news.active {
     border-color: #fe4f60;
 }
 
@@ -127,12 +170,14 @@ body.vologda-plombir-page {
     color: #d4cccc;
 }
 
-.vologda-plombir-page h3 {
+.zr-page h3 {
     color: #CB141A;
-    font-size: 2.5em;
-    font-family: "CyrillicOldBold", serif;
-    text-shadow: 0 -1px 0 #FFFFFF, 0 -1px 0 #FFFFFF, 0 1px 0 #FFFFFF, 0 1px 0 #FFFFFF, -1px 0 0 #FFFFFF, 1px 0 0 #FFFFFF, -1px 0 0 #FFFFFF, 1px 0 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
-    text-transform: uppercase;
+    font-size: 3em;
+    font-family:'Conv_ofont.ru_AXP ZhikharevC',Serif;
+    background: rgb(224,147,61);
+    background: linear-gradient(90deg, rgba(224,147,61,1) 0%, rgba(224,147,61,1) 19%, rgba(255,218,131,1) 73%, rgba(224,147,61,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     letter-spacing: 0.7px;
     padding: 15px;
     text-align: center;
@@ -140,33 +185,59 @@ body.vologda-plombir-page {
     position: relative;
 }
 
-.vologda-plombir-page h3::after {
+.zr-page h3::after {
     content: "";
     position: absolute;
-    background: url(../images/decor_title_reviews.png) no-repeat;
-    width: 121px;
-    height: 18px;
+    background: linear-gradient(90deg, rgba(224,147,61,1) 0%, rgba(224,147,61,1) 19%, rgba(255,218,131,1) 73%, rgba(224,147,61,1) 100%);
+    width: 95%;
+    height: 2px;
     bottom: -0.3em;
-    left: calc(50% - 60.5px);
+    left: calc(11% - 58.5px);
     border: none;
-    top: 75px;
+    top: 78px;
+}
+
+.zr-page #news_wrapper  {
+    text-align: center;
+}
+
+.zr-page #news_wrapper h3 {
+    display: inline-block;
+}
+
+.zr-page #news_wrapper h3::after {
+    left: calc(32% - 60.5px);
+    width: 87%;
+}
+
+.zr-page #where_buy {
+    text-align: center;
+}
+
+.zr-page #where_buy h3 {
+    display: inline-block;
+}
+
+.zr-page #where_buy h3:after {
+    left: calc(22% - 58.5px);
+    width: 87%;
 }
 
 .new_items_and_news.container-fluid {
     max-width: 100%;
 }
 
-.vologda-plombir-page .map {
+.zr-page .map {
     background: url(../images/map.png) no-repeat center -30px;
     height: 570px;
     background-size: contain;
 }
 
-.vologda-plombir-page #where_buy h3 {
+.zr-page #where_buy h3 {
     margin-top: 15px;
 }
 
-.vologda-plombir-page footer {
+.zr-page footer {
     background-color: #ffefd6;
 }
 
@@ -233,7 +304,7 @@ body.vologda-plombir-page {
     margin-top: 2em;
   }
 
-  .vologda-plombir-page .assortment .positions-wrap .container-fluid {
+  .zr-page .assortment .positions-wrap .container-fluid {
     /*padding-left: 15px;
     padding-right: 15px;
     max-width: 1170px;*/
@@ -267,6 +338,19 @@ body.vologda-plombir-page {
 }
 
 @media (max-width: 767px) {
+    .zr-page h3 {
+        font-size: 2em;
+    }
+
+    .zr-page h3::after {
+        display: none;
+    }
+
+    #where_buy {
+        background: none;
+        margin-bottom: 100px;
+    }
+
     .filter-block {
         flex-direction: column;
         align-items: center;
@@ -277,7 +361,7 @@ body.vologda-plombir-page {
         width: 12em;
     }
 
-    .vologda-plombir-page .map {
+    .zr-page .map {
         height: 334.8px;
     }
 
@@ -287,7 +371,7 @@ body.vologda-plombir-page {
 }
 
 @media (max-width: 767px) {
-    .vologda-plombir-page .map {
+    .zr-page .map {
         height: 134.8px;
         padding-top: 130px;
     }
